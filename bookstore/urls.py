@@ -1,6 +1,6 @@
 from rest_framework import routers
-from .api import BookViewSet
-from .api import BookShopViewSet
+from .views import BookViewSet
+from .views import BookShopViewSet
 
 router = routers.DefaultRouter()
 router.register('api/bookshops', BookShopViewSet, 'bookshops')
